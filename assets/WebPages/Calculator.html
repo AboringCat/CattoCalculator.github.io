@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="zh" prefix="og: https://ogp.me/ns#">
+ <head>
+  <meta charset="utf-8">
+  <title id="title">开始使用</title>
+  <meta property="og:site_name" content="计算页面">
+  <meta property="og:title" content="在线不等式计算器">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mathdf.com/equ/cn/">
+  <meta property="og:image:width" content="256">
+  <meta property="og:image:height" content="256">
+  <meta property="og:description" content="方程、不等式的计算器">
+  <meta name="description" content="方程、不等式的计算器">
+  <meta name="keywords" content="求解方程, 求解不等式">
+   <meta name="robots" content="index, follow">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="effbedc9a02e101a">
+  <meta name="theme-color" content="#3c3c3c">
+  <link rel="alternate" hreflang="zh" href="https://mathdf.com/equ/cn/">
+   <link rel="canonical" href="https://mathdf.com/equ/cn/">
+   <link rel="manifest" href="https://mathdf.com/site.webmanifest">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMLP1D3BYZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TMLP1D3BYZ');
+</script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7958472158675518" crossorigin="anonymous"></script>
+    <link rel="preload" href="/normalize.css?1710678054" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="/normalize.css?1710678054" rel="stylesheet"></noscript>        <link rel="stylesheet" type="text/css" href="/sheets.css?1731095476">
+        <link rel="stylesheet" type="text/css" href="/equ/sheets-equ.css?1730931318">
+    
+
+<style type="text/css">@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/greek/400/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/greek-ext/400/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Rubik;font-style:normal;font-weight:400;src:url(/cf-fonts/v/rubik/5.0.18/hebrew/wght/normal.woff2);unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F;font-display:swap;}@font-face {font-family:Rubik;font-style:normal;font-weight:400;src:url(/cf-fonts/v/rubik/5.0.18/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Rubik;font-style:normal;font-weight:400;src:url(/cf-fonts/v/rubik/5.0.18/arabic/wght/normal.woff2);unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0898-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC;font-display:swap;}@font-face {font-family:Rubik;font-style:normal;font-weight:400;src:url(/cf-fonts/v/rubik/5.0.18/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Rubik;font-style:normal;font-weight:400;src:url(/cf-fonts/v/rubik/5.0.18/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Rubik;font-style:normal;font-weight:400;src:url(/cf-fonts/v/rubik/5.0.18/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}</style>    <script>var adBlockEnabled=!1;const isMobile=!1;setInterval(atob('ZGVidWdnZXI='),3e2);</script>
+</head> <body class="site-body tw scroll-theme loading ">
+   <header id="header-main" class="resume-header">
+  <div id="header-middle">
+   <a id="tohome" href="https://mathdf.com/cn/">
+     <span id="logo-header">
+       <img src="/logo/logo_icon.svg" width="48" height="48" alt="logo" ondragstart="return false;" ondrop="return false;">
+       <img src="/logo/legend.svg" width="124" height="22" alt="MathDF" ondragstart="return false;" ondrop="return false;">
+     </span>
+   </a>
+   <div id="menu-shorts" class="non-select">
+     <div class="hide">
+       <div id="user-study"></div>
+       <div id="sub-type"></div>
+     </div>
+     <div id="menu-lang" class="notranslate">CN</div>
+     <div id="menu-theme">
+       <img src="/logo/theme.svg" width="32" height="32" alt="theme" ondragstart="return false;" ondrop="return false;">
+     </div>
+     <div id="menu-button">
+       <img src="/logo/menu.svg" width="32" height="32" alt="menu" ondragstart="return false;" ondrop="return false;">
+       <img src="/logo/close.svg" width="32" height="32" alt="close" ondragstart="return false;" ondrop="return false;">
+     </div>
+   </div>
+  </div>
+  <div id="menu-calc">
+   <div id="menu-calc-middle">
+     <div class="menu-calc-list">
+       <div class="menu-calc-list-col">
+        <div><a id="toequ" class="calc-selected" href="https://mathdf.com/equ/cn/">方程</a></div>
+       </div>
+       <div class="menu-calc-list-col">
+   </div>
+  </div>
+</header>
+<div id="menu-lang-select" class="hidden non-select notranslate" data-last="">
+  <div data-lang='cn' class="selected">中文 (CN)</div>
+</div><div id="watch-pixel"></div>
+<script>
+document.addEventListener("DOMContentLoaded",function(){const a=document.getElementById("header-main"),b=document.getElementById("arrow-top"),c=document.getElementById("share"),k=document.getElementById("menu-lang-select"),e=new IntersectionObserver(d=>{d[0].isIntersecting?(a.classList.add("resume-header"),b&&(b.classList.add("hidden"),c.classList.remove("hidden"),c.classList.remove("slow-blur-visible"),c.classList.add("slow-visible"))):(a.classList.remove("calc-open"),a.classList.remove("resume-header"),b&&(b.classList.remove("hidden"),b.classList.remove("slow-blur-visible"),
+b.classList.add("slow-visible"),c.classList.add("hidden"),k.classList.add("hidden")));}),f=document.getElementById("watch-pixel"),g=document.getElementById("menu-button");e.observe(f);g.addEventListener("click",()=>{a.classList.toggle("calc-open")});a.addEventListener("click",e=>{e.stopPropagation();});document.body.addEventListener("click",e=>{if(a.classList.contains("calc-open")){g.click()}if(!k.classList.contains("hidden")){k.classList.add("hidden")}});document.getElementById("menu-lang").addEventListener("click",()=>{k.classList.toggle("hidden")});var ul=navigator.language||navigator.userLanguage||"";ul=ul.replace(/\-.+$/,"");[...k.children].some(e=>{if(e.dataset['lang']===ul){e.classList.add("last-time");k.insertBefore(e,k.firstElementChild.nextSibling);return true}});if(/macintosh/i.test(navigator.userAgent)){document.body.classList.add("macintosh");[...document.querySelectorAll(".ctrl-key")].forEach(e=>{e.innerHTML="COMMAND"})}})
+</script>
+  <main class="site-content">
+  <div id="middle-container">
+   <div id="middle-content">
+    <div id="content">
+     <div id="topmost-content">
+       <div itemscope itemtype="http://schema.org/Service">
+        <h1 class="h1 letter-space-1" itemprop="serviceType"><span id="kind">方程、系统和不等式计算器。 在线求解方程、不等式和系统</span></h1>
+       </div>
+       <div>
+       </div>
+       <div id="top-content">
+        <div id="calc-settings" class="letter-space-1">
+            <div id="calc-settings-content">
+             <div>
+              <span id="calc-param-name" class="calc-setting-text non-select">计算相对于</span>
+             </div>
+             <div>
+              <div class="relative-cursor">
+               <input id="calc-sys-param" class="notranslate hide" type="text" placeholder="xyzuvw" autocapitalize="off" autocomplete="off" spellcheck="false"><i></i>
+              </div>
+              <select id="calc-param" class="calc-setting-select notranslate">
+               <option value="x">x</option>
+              </select>
+              <select id="calc-set" class="calc-setting-select select-set">
+                  <option id="real" value="0">实数 - &#8477;</option>
+                  <option id="complex" value="1" >复数（哈哈没做，我哪会复数） - &#8450;</option>
+              </select>
+             </div>
+            </div>
+        </div>
+       </div>
+       <div class="box">
+        <div id="hidden-form-system" class="hide system-top non-select">
+            <div id="show-system" class="system-hidden non-select">▸<span class="system-word">系统</span></div>
+        </div>
+        <div id="form-system" class=" system-top">
+            <div id="hidden-system" class="system-hidden non-select">▾<span class="system-word">系统</span></div>
+        <div id="system" class="system">
+          <div class="td-common notranslate">
+            <div><div class="relative-cursor"><input id="lhs-1" class="lhs init-system" placeholder="x^2+y^2+6*x+2*y" data-row="0" data-col="0" data-def="x^2+y^2+6*x+2*y" autocapitalize="off" autocomplete="off" spellcheck="false"><i></i></div><span class="equal-sign">=</span><div class="relative-cursor"><input id="rhs-1" class="rhs init-system" placeholder="0" data-row="0" data-col="1" data-def="0" autocapitalize="off" autocomplete="off" spellcheck="false"><i></i></div></div>
+            <div><div class="relative-cursor"><input id="lhs-2" class="lhs init-system" placeholder="x+y+8" data-row="1" data-col="0" data-def="x+y+8" autocapitalize="off" autocomplete="off" spellcheck="false"><i></i></div><span class="equal-sign">=</span><div class="relative-cursor"><input id="rhs-2" class="rhs init-system" placeholder="0" data-row="1" data-col="1" data-def="0" autocapitalize="off" autocomplete="off" spellcheck="false"><i></i></div></div>
+          </div>
+        </div>
+        <div class="flex-panel system">
+        <div class="panel-left">
+        <button id="clear-system" class="clear-system notranslate outline-off non-select"><img src="/logo/clear.svg" class="clear-svg non-select" width="25" height="25" alt="clear" ondragstart="return false;" ondrop="return false;"></button></div>
+        <div class="panel-right"><button id="plus-system" class="incbutton outline-off notranslate">+</button><button id="minus-system" class="incbutton outline-off notranslate">–</button></div>
+        </div>
+        </div>
+       </div>
+      </div>
+     <div class="content-right">
+       <div class="content-offset">
+        <div class="container-line">
+         <div id="random-input"><img class="non-select" src="/logo/random.svg" width="50" height="20" alt="random" ondragstart="return false;" ondrop="return false;"></div>
+         <div id="clear-input" class="notranslate" onclick="clearInput();"><img src="/logo/clear.svg" class="clear-svg non-select" width="25" height="25" alt="clear" ondragstart="return false;" ondrop="return false;"></div>
+         <div class="calc-method">
+           <div class="switch-container">
+             <label class="switch">
+               <input id="calc-method" type="checkbox">
+               <span class="slider"></span>
+               <img class="non-select" src="/logo/various-steps.svg" width="20" height="20" alt="various steps" ondragstart="return false;" ondrop="return false;">
+             </label>
+           </div>
+         </div>
+        </div>
+        <div id="input-solve">
+                  <div class="input-main">
+           <div id="start-photo" class="hide"></div>
+           <label id="load-image"><input type="file" accept="image/png, image/jpeg, image/webp" onclick="this.value=null;"><img src="/logo/image.svg" class="photo-svg non-select" width="24" height="24" alt="image"></label>
+                    <div id="input-parent">
+             <div id="auto-correct" class="hidden hide">自动更正</div>
+             <input id="input-expression" class="outline-off notranslate" type="text" placeholder="4*x^2+12*x+12/x+4/x^2>=47" value="" autocapitalize="off" autocomplete="off" spellcheck="false"><i></i>
+           </div>
+                  </div>
+                    <div id="input-actions" class="flex">
+                         <button id="solve" class="trans-1 notranslate letter-space-1" disabled data-calc="计算！">=</button>
+           </div>
+        </div>
+       </div>
+     </div>
+     <div id="display-output-container">
+          <div class="wheel-settings">
+              <div id='int-setting' class="trans-1" title="设置">
+              </div>
+              <div id="int-setting-display" class="hide">
+                  <label class="setting-container letter-space-1">
+                      <input id='expand-table-int' type="checkbox" >
+                      <span class="checkmark"></span>
+                      <span id="expand-table" class="setting-style">计算机因式分解</span>
+                  </label>
+                  <label class="setting-container letter-space-1">
+                      <input id='end-float' type="checkbox">
+                      <span class="checkmark"></span>
+                      <span id="end-float-name" class="setting-style">浮点结果</span>
+                  </label>
+              </div>
+          </div>
+          <div id="copy-display" class="trans-1 mcopy" data-copy="复制 LaTeX"></div>
+          <div id="display-output-outset" class="non-select">
+              <div id="display-begin-render"><span id='site-is-loading'>内容正在加载</span></div><div id='display-output-mathjax' class="scroll-theme non-select in-render notranslate"></div>
+          </div>
+      <div id="display-notice-container">
+          <div id="display-notice" class="hidden hide">填补空白</div>
+      </div>
+     </div>
+   <!-- ads_top -->
+<div style="min-height:90px;margin-bottom:12px;">
+<ins class="adsbygoogle ads-top"
+     style="display:block;min-height:1px;"
+     data-ad-client="ca-pub-7958472158675518"
+     data-ad-slot="4283307703"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+</div>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div class="ads-top" style="min-height:1px;"></div>
+   <div id="input-info-container">
+<div>
+ <div id="input-info-hide" class="input-info-opened" data-opened="&#9662;隐藏" data-closed="&#9656;显示输入功能"></div>
+</div>
+<div id="input-info">
+   <p><span id="iinput-1">输入识别各种同义词像功能</span> <span class="mformula notranslate">asin</span>, <span class="mformula notranslate">arsin</span>, <span class="mformula notranslate">arcsin</span>, <span class="mformula notranslate">sin^-1</span></p>
+  <p><span id="iinput-2">乘号和括号被额外放置 - 写</span> <span class="mformula notranslate">2sinx</span> <span id="iinput-3">相似的 </span><span class="mformula notranslate">2*sin(x)</span></p>
+    <p><span id="iinput-4">数学函数和常数列表</span>:</p>
+     <p>&#8226; <span id="iformula-1" class="mformula mcopy notranslate" data-copy="复制">ln(x)</span> — <span id="idformula-1">自然对数</span></p>
+    <p>&#8226; <span id="iformula-2" class="mformula mcopy notranslate" data-copy="复制">sin(x)</span> — <span id="idformula-2">正弦</span></p>
+    <p>&#8226; <span id="iformula-3" class="mformula mcopy notranslate" data-copy="复制">cos(x)</span> — <span id="idformula-3">余弦</span></p>
+    <p>&#8226; <span id="iformula-4" class="mformula mcopy notranslate" data-copy="复制">tan(x)</span> — <span id="idformula-4">正切</span></p>
+    <p>&#8226; <span id="iformula-5" class="mformula mcopy notranslate" data-copy="复制">cot(x)</span> — <span id="idformula-5">余切</span></p>
+    <p>&#8226; <span id="iformula-6" class="mformula mcopy notranslate" data-copy="复制">arcsin(x)</span> — <span id="idformula-6">反正弦</span></p>
+    <p>&#8226; <span id="iformula-7" class="mformula mcopy notranslate" data-copy="复制">arccos(x)</span> — <span id="idformula-7">反余弦</span></p>
+    <p>&#8226; <span id="iformula-8" class="mformula mcopy notranslate" data-copy="复制">arctan(x)</span> — <span id="idformula-8">反正切</span></p>
+    <p>&#8226; <span id="iformula-9" class="mformula mcopy notranslate" data-copy="复制">arccot(x)</span> — <span id="idformula-9">反余切</span></p>
+    <p>&#8226; <span id="iformula-10" class="mformula mcopy notranslate" data-copy="复制">sinh(x)</span> — <span id="idformula-10">双曲正弦</span></p>
+    <p>&#8226; <span id="iformula-11" class="mformula mcopy notranslate" data-copy="复制">cosh(x)</span> — <span id="idformula-11">双曲余弦</span></p>
+    <p>&#8226; <span id="iformula-12" class="mformula mcopy notranslate" data-copy="复制">tanh(x)</span> — <span id="idformula-12">双曲正切</span></p>
+    <p>&#8226; <span id="iformula-13" class="mformula mcopy notranslate" data-copy="复制">coth(x)</span> — <span id="idformula-13">双曲余切</span></p>
+    <p>&#8226; <span id="iformula-14" class="mformula mcopy notranslate" data-copy="复制">sech(x)</span> — <span id="idformula-14">双曲正割</span></p>
+    <p>&#8226; <span id="iformula-15" class="mformula mcopy notranslate" data-copy="复制">csch(x)</span> — <span id="idformula-15">双曲余割</span></p>
+    <p>&#8226; <span id="iformula-16" class="mformula mcopy notranslate" data-copy="复制">arsinh(x)</span> — <span id="idformula-16">反双曲正弦</span></p>
+    <p>&#8226; <span id="iformula-17" class="mformula mcopy notranslate" data-copy="复制">arcosh(x)</span> — <span id="idformula-17">反双曲余弦</span></p>
+    <p>&#8226; <span id="iformula-18" class="mformula mcopy notranslate" data-copy="复制">artanh(x)</span> — <span id="idformula-18">反双曲正切</span></p>
+    <p>&#8226; <span id="iformula-19" class="mformula mcopy notranslate" data-copy="复制">arcoth(x)</span> — <span id="idformula-19">反双曲余切</span></p>
+    <p>&#8226; <span id="iformula-20" class="mformula mcopy notranslate" data-copy="复制">sec(x)</span> — <span id="idformula-20">正割</span></p>
+    <p>&#8226; <span id="iformula-21" class="mformula mcopy notranslate" data-copy="复制">csc(x)</span> — <span id="idformula-21">余割</span></p>
+    <p>&#8226; <span id="iformula-22" class="mformula mcopy notranslate" data-copy="复制">arcsec(x)</span> — <span id="idformula-22">反正割</span></p>
+    <p>&#8226; <span id="iformula-23" class="mformula mcopy notranslate" data-copy="复制">arccsc(x)</span> — <span id="idformula-23">反余割</span></p>
+    <p>&#8226; <span id="iformula-24" class="mformula mcopy notranslate" data-copy="复制">arsech(x)</span> — <span id="idformula-24">反双曲正割</span></p>
+    <p>&#8226; <span id="iformula-25" class="mformula mcopy notranslate" data-copy="复制">arcsch(x)</span> — <span id="idformula-25">反双曲余割</span></p>
+    <p>&#8226; <span class="mformula mcopy notranslate" data-copy="复制">|x|</span>, <span class="mformula mcopy notranslate" data-copy="复制">abs(x)</span> — <span id="idformula-30">绝对值</span></p>
+  <p>&#8226; <span class="mformula mcopy notranslate" data-copy="复制">sqrt(x)</span>, <span class="mformula mcopy notranslate" data-copy="复制">root(x)</span> — <span id="idformula-33">平方根</span></p>
+  <p>&#8226; <span class="mformula mcopy notranslate" data-copy="复制">exp(x)</span> — <span id="idformula-31">e的x次方</span></p>
+   <p class="only-com light-hide notranslate">&#8226; <span class="mformula mcopy" data-copy="复制">conj(z)</span> — <span>\(\overline{z}\)</span></p>
+  <p class="notranslate">&#8226; <span class="mformula mcopy" data-copy="复制">a+b</span> — \(a+b\)</p>
+  <p class="notranslate">&#8226; <span class="mformula mcopy" data-copy="复制">a-b</span> — \(a-b\)</p>
+  <p class="notranslate">&#8226; <span class="mformula mcopy" data-copy="复制">a*b</span> — \(a\cdot b\)</p>
+  <p class="notranslate">&#8226; <span class="mformula mcopy" data-copy="复制">a/b</span> — \(\dfrac{a}{b}\)</p>
+  <p class="notranslate">&#8226; <span class="mformula mcopy" data-copy="复制">a^b</span>, <span class="mformula mcopy" data-copy="复制">pow(a,b)</span> — \(a^b\)</p>
+  
+  <p class="notranslate">&#8226; <span class="mformula mcopy" data-copy="复制">sqrt7(x)</span> — \(\sqrt[7]{x}\)</p>
+  <p class="notranslate">&#8226; <span class="mformula mcopy" data-copy="复制">sqrt(n,x)</span> — \(\sqrt[n]{x}\)</p>
+  <p class="notranslate">&#8226; <span class="mformula mcopy" data-copy="复制">lg(x)</span> — \(\log_{10}\left(x\right)\)</p>
+  <p class="notranslate">&#8226; <span class="mformula mcopy" data-copy="复制">log3(x)</span> — \(\log_3\left(x\right)\)</p>
+  <p class="notranslate">&#8226; <span class="mformula mcopy" data-copy="复制">log(a,x)</span> — \(\log_a\left(x\right)\)</p>
+  <p class="notranslate">&#8226; <span class="mformula mcopy" data-copy="复制">ln^2(x)</span>, <span class="mformula mcopy" data-copy="复制">ln(x)^2</span> — \(\ln^2\left(x\right)\)</p>
+  <p class="only-dif light-hide notranslate">&#8226; <span class="mformula mformula-dif mcopy" data-copy="复制">y'''</span>, <span class="mformula mformula-dif mcopy" data-copy="复制">y'3</span> — \(y'''\)</p>
+  <p class="only-dif light-hide notranslate">&#8226; <span class="mformula mcopy" data-copy="复制">d^2y/dx^2</span>, <span class="mformula mcopy" data-copy="复制">d2y/dx2</span> — \(\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}\)</p>
+  <p class="only-lambda light-hide notranslate">&#8226; <span class="mformula mcopy" data-copy="复制">lambda</span> — \(\lambda\)</p>
+  <div class="mconst-table">
+ <div class="mconst-row notranslate">
+     <div class="mconst-ceil">&#8226; <span class="mformula mcopy" data-copy="复制">pi</span> — \(\pi\)</div><div class="mconst-ceil"><span class="mformula mcopy" data-copy="复制">alpha</span> — \(\alpha\)</div><div class="mconst-ceil"><span class="mformula mcopy" data-copy="复制">beta</span> — \(\beta\)</div>
+ </div>
+ <div class="mconst-row notranslate">
+     <div class="mconst-ceil">&#8226; <span class="mformula mcopy" data-copy="复制">sigma</span> — \(\sigma\)</div><div class="mconst-ceil"><span class="mformula mcopy" data-copy="复制">gamma</span> — \(\gamma\)</div><div class="mconst-ceil"><span class="mformula mcopy" data-copy="复制">nu</span> — \(\nu\)</div>
+ </div>
+ <div class="mconst-row notranslate">
+     <div class="mconst-ceil">&#8226; <span class="mformula mcopy" data-copy="复制">mu</span> — \(\mu\)</div><div class="mconst-ceil"><span class="mformula mcopy" data-copy="复制">phi</span> — \(\phi\)</div><div class="mconst-ceil"><span class="mformula mcopy" data-copy="复制">psi</span> — \(\psi\)</div>
+ </div>
+ <div class="mconst-row notranslate">
+     <div class="mconst-ceil">&#8226; <span class="mformula mcopy" data-copy="复制">tau</span> — \(\tau\)</div><div class="mconst-ceil"><span class="mformula mcopy" data-copy="复制">eta</span> — \(\eta\)</div><div class="mconst-ceil"><span class="mformula mcopy" data-copy="复制">rho</span> — \(\rho\)</div>
+ </div>
+ <div class="mconst-row notranslate">
+     <div class="mconst-ceil">&#8226; <span class="mformula mcopy" data-copy="复制">a123</span> — \(a_{123}\)</div><div class="mconst-ceil"><span class="mformula mcopy" data-copy="复制">x_n</span> — \(x_{n}\)</div><div class="mconst-ceil"><span class="mformula mcopy" data-copy="复制">mu11</span> — \(\mu_{11}\)</div>
+ </div>
+</div>    <div class="only-equ light-hide mconst-table">
+   <div class="mconst-row notranslate">
+       <div class="mconst-ceil">&#8226; <span class="mformula mcopy" data-copy="复制">&lt;=</span> — \(\leq\)</div><div class="mconst-ceil"><span class="mformula mcopy" data-copy="复制">&gt;=</span> — \(\geq\)</div>
+   </div>
+  </div>
+</div>
+<div id="bookmark-container">
+      <div id="bookmark" class="bookmark-line letter-space-1"><span id="bookmark-label">收藏此页</span> — <span class="bformula ctrl-key notranslate">CTRL</span>+<span class="bformula notranslate">D</span></div>
+  </div>
+</div>   <div id="math-canvas-container" class="hide">
+ <div id="link-on-solve" class="non-select">链接到此解决方案</div>
+  <div id="link-qrcode"><div></div></div>
+  <div id="allscales" class="kcanvas outline-off non-select">
+   <span id="s75" class="scale allscales-select" onclick="scaleCanvas(75);">75%</span>&nbsp;<span id="s90" class="scale" onclick="scaleCanvas(90);">90%</span>&nbsp;<span id="s100" class="scale" onclick="scaleCanvas(100);">100%</span>&nbsp;<span id="s110" class="scale" onclick="scaleCanvas(110);">110%</span>&nbsp;<span id="s125" class="scale" onclick="scaleCanvas(125);">125%</span><span class="cursor-default">&nbsp;🔍</span>
+ </div>
+ <div id="calculation-scale">
+   <div id="math-canvas"></div>
+ </div>
+</div>
+<div id="load-animation" class="hide">
+<div class="load-container"><div class="load-circle-1"><div class="load-circle-2"><div class="load-circle-3"><div class="load-circle-4"><div class="load-circle-5"><div class="load-circle-6"><div class="load-circle-7"><div class="load-circle-8"></div></div></div></div></div></div></div></div></div>
+</div>
+<span id="labelbegincalc" class="process fast-hidden hide">计算……</span>
+<span id="labelbegindesign" class="process hidden hide">画画..</span>
+<span id="labelbegintranslate" class="process hidden hide">翻译..</span>
+<span id="labelerrorlong" class="process hidden hide">表情太长了！</span>
+<span id="labelerror" class="process hidden hide">内部错误</span>
+<span id="labelerrorconnect" class="process hidden hide">连接错误</span>
+<span id="labelupdate" class="process hidden hide">计算器正在更新</span>
+<span id="labelupdatepage" class="process hidden hide">有必要刷新页面</span>
+<span id="labelcopy" class="process hidden hide">链接已复制！</span>
+<span id="labelmcopy" class="process hidden hide">复制公式</span>
+<span id="labeltrsend" class="process hidden hide">发送的更新文本</span>
+<div id="needblockadb" class="hide hidden fast-visible main-top-label">
+<div class="top-label-container">
+ <div class="top-label">
+   <div id="close-toupdate" class="right-top-close non-select"><img src="/logo/close.svg" height="22" width="22" alt="close" ondragstart="return false;" ondrop="return false;"></div>
+   <div id="needblockadb-label" class="first-letter">此选项可用于禁用 Adblock</div>
+   <a id="link-toupdate" href="https://mathdf.com/equ/cn/" class="clear-link" target="_self"><div id="toupdate-label" class="toauth">刷新页面</div></a>
+ </div>
+</div>
+</div>
+<div id="arrow-top" class="hide hidden non-select">
+    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 40 42"><g fill="none" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="10"><circle class="arrow-iconcircle" cx="20" cy="20" r="18"></circle><path class="arrow-icon--arrow" d="M27.5 20L20 12.5L12.5 20M20 12.5v16"></path></g></svg>
+</div>    </div>
+   <!-- ads_bottom -->
+<div style="margin:10px 0;">
+<ins class="adsbygoogle ads-bottom"
+     style="display:block;"
+     data-ad-client="ca-pub-7958472158675518"
+     data-ad-slot="1829368903"
+     data-ad-format="rectangle, horizontal"
+     data-full-width-responsive="true"></ins>
+</div>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    <div id="under-calculation"></div>
+    <div id="plot" class="hide">
+      <div class="plot-center">
+        <div class="plot-qscale">
+         <div class="topline-graph">
+           <div id="download-graph"><img src="/logo/download.svg" class="download-svg non-select" alt="download"></div>
+           <div id="subst-consts">
+             <div>
+               <div class="plot-const notranslate">C =</div><input>
+             </div>
+           </div>
+         </div>
+         <canvas id="cnvs" class="non-select" width="900" height="900" ondragstart="return false;" ondrop="return false;"></canvas>
+         <div class="plot-bottom">
+           <div id="coord-label" class="notranslate">x=0, y=0</div>
+         </div>
+                 </div>
+        <div class="plot-right-menu">
+  <div class="plot-right-menu-sub">
+    <div id="plot-graph-label">图表</div>
+    <div class="display-graphs checkbox-inputs non-select">
+      <div>
+        <input type="checkbox" id="display-graph-f" class="display-graph non-select"
+         name="graph" value="0" checked>
+        <label for="display-graph-f" class="notranslate">\(f(x)\)</label>
+      </div>
+    </div>
+  </div>
+  <div class="plot-right-menu-sub">
+    <div id="plot-eq" class="notranslate">\(f(x)=0\)</div>
+  </div>
+  <div class="plot-right-menu-sub">
+    <div id="plot-value-label">价值观</div>
+    <div class="values-graph non-select">
+     <div>
+      <div class="notranslate">\(x =\)</div><input id="plot-x-value">
+     </div>
+     <div>
+      <div class="notranslate">\(f(x) =\)</div><input id="plot-f-value" disabled>
+     </div>
+    </div>
+  </div>
+  <div class="plot-right-menu-sub">
+    <div id="plot-scale-label">缩放</div>
+    <div class="radio-enhance checkbox-inputs non-select">
+      <div>
+        <input type="radio" id="enhance-xy" class="non-select enhance"
+         name="enhance" value="3" checked>
+        <label for="enhance-xy" class="notranslate">X:Y</label>
+      </div>
+      <div>
+        <input type="radio" id="enhance-x" class="non-select enhance"
+         name="enhance" value="1">
+        <label for="enhance-x" class="notranslate">X</label>
+      </div>
+      <div>
+        <input type="radio" id="enhance-y" class="non-select enhance"
+         name="enhance" value="2">
+        <label for="enhance-y" class="notranslate">Y</label>
+      </div>
+    </div>
+    <div class="flex non-select">
+      <div id="clear-enhance" class="notranslate">1:1</div>
+    </div>
+  </div>
+</div>      </div>
+    </div>
+  <div id="share">
+  <div class="top-right">
+    <a title="分享 Facebook" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmathdf.com%2Fequ%2Fcn%2F" rel="nofollow noopener" target="_blank">
+<span class="icon fill"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></span>
+</a>  <a title="分享 Twitter" class="twitter" href="https://twitter.com/intent/tweet?text=https://mathdf.com/equ/cn/" rel="nofollow noopener" target="_blank">
+<span class="icon fill"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg></span>
+</a>  </div>
+  </div>
+  </div>
+ </div>
+  <div id="camera-container" class="hide">
+ <div id="camera-layout" data-version="v1.2">
+  <div class="photo-c non-select">
+    <video class="photo-video" autoplay muted playsinline></video>
+    <img class="photo-image" src="data:," alt ondragstart="return false;" ondrop="return false;">
+    <div class="photo-selected-rect hide">
+      <div class="tls-s pull-s"></div>
+      <div class="trs-s pull-s"></div>
+      <div class="bls-s pull-s"></div>
+      <div class="brs-s pull-s"><div class="pull-triangle"></div></div>
+    </div>
+    <canvas class="photo-canvas hide"></canvas>
+  </div>
+  <div class="pause-c">
+    <div class="pause"></div>
+  </div>
+  <div class="photo-close"></div>
+  <div id="ocr-labels" class="non-select">
+    <div class="ocr-label label-notfound hide">找不到表达式</div>
+  </div>
+ </div>
+</div>
+<script async src="/camera-ocr/script.js?1723914707"></script> </main>
+    <script async src="/qrcode.js?1721322841"></script>
+  <footer id="footer">
+  <div>
+    <div class="flex">
+      <span id="rights">版权所有</span><div class="inline-block"><span>&nbsp;&copy;&nbsp;</span><span id="owner" class="notranslate">MathDF</span></div>
+    </div>
+    <div class="right-side">
+      <span class="oversize"><span id="last-modified">上一次更改</span>:&nbsp;</span><span>2024</span>
+    </div>
+  </div>
+  <div id="email">
+    <span class="notranslate">hello<span id="email-service">@mathdf.com</span></span>
+  </div>
+</footer>
+<script>isMobile?document.getElementById("email").addEventListener("click",()=>{try{navigator.clipboard.writeText(atob("aGVsbG9AbWF0aGRmLmNvbQ=="))}catch(e){}}):!1;</script>  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.20/katex.min.js"></script>
+  <script defer src="/KaTeX/auto-render.min.js?1717362185"></script>
+  <script async src="/sda.js?1723648110"></script>
+  <script async src="/cross-scroll.js"></script>
+  <div id="llm-container" class="hide hidden">
+  <div id="llm-c-menu">
+    <div id="llm-c-m-actions">
+      <div id="llm-c-m-a-erase" class="hidden"><img src="/logo/trash.svg" height="28" width="28" alt="erase" ondragstart="return false;" ondrop="return false;"></div>
+      <div id="llm-c-m-a-close"><img src="/logo/close.svg" height="28" width="28" alt="close" ondragstart="return false;" ondrop="return false;"></div>
+    </div>
+    <div id="llm-c-m-layer">
+      <div id="llm-c-m-l-content">
+        <div id="llm-c-m-l-c-responses">
+          <div class="llm-c-m-l-c-response">
+            <div id="llm-c-m-l-c-r-description" class="llm-c-m-l-c-r-output" data-content="简化的数学AI模型用于推理、回答问题和解决基于文本的问题。每条消息独立处理，不记忆先前的消息。模型可能会出现错误。"></div>
+          </div>
+        </div>
+        <div id="llm-c-m-l-c-input-container-block">
+          <div id="llm-c-m-l-c-entered-into-calc" class="hide">
+            <div id="llm-c-m-l-c-eic-task"></div>
+            <img src="/logo/box-arrow-in-down.svg" height="20" width="20" alt="insert" ondragstart="return false;" ondrop="return false;">
+          </div>
+          <div id="llm-c-m-l-c-input-container">
+            <textarea id="llm-c-m-l-c-input" rows="1" placeholder="发送消息" autocomplete="off" maxlength="512"></textarea>
+            <div id="llm-c-m-l-c-generate-button-container">
+              <div id="llm-c-m-l-c-generate-button"><img src="/logo/arrow-up-circle-fill.svg" height="30" width="30" alt="generate" ondragstart="return false;" ondrop="return false;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id='llm-button' class='non-highlight'></div>
+<div id='eidaek' data-qaosme='bFkUbtVXT"+)1>>1-11(+)]1<<1[)1!+][((+"C"+)]1<<1~-[)1!+][((+)]1<<1[)1!+][((+)]1<<1[)1!+][((+"XN"+)1<<1<<1<<1(+"1U"+)]0^1[)1!+][((+"t^2C' data-imeoaf='0'></div>
+<script src="/llm/script.js?1727995208"></script>  <link rel="preload" href="/keyboard.css?1726455005" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="/keyboard.css?1726455005" rel="stylesheet"></noscript>
+<div id="keyboard-container" class="non-select notranslate hide">
+  <div id="keyboard-button"></div>
+</div>
+<script id="keyboard-text-html">const keyboardHTML = `<div>
+  	<div id="keys-selected-var" class="keys-reveal keys-reveal-var hide">
+		<div class="row simple-keys">
+			<div><div class="key-reveal key-var" data-code="y">y</div></div>
+			<div><div class="key-reveal key-var" data-code="t">t</div></div>
+			<div><div class="key-reveal key-var" data-code="u">u</div></div>
+		</div>
+	</div>
+	<div id="keys-selected-pow" class="keys-reveal keys-reveal-pow hide">
+		<div class="row simple-keys">
+			<div><div class="key-reveal key-left" data-code="³">³</div></div>
+			<div><div class="key-reveal key-left" data-code="⁴">⁴</div></div>
+			<div><div class="key-reveal key-left" data-code="⁵">⁵</div></div>
+		</div>
+	</div>
+	<div id="keys-selected-sqrt" class="keys-reveal keys-reveal-sqrt hide">
+		<div class="row simple-keys">
+			<div><div class="key-reveal key-left" data-code="sqrt3(">³√</div></div>
+			<div><div class="key-reveal key-left" data-code="sqrt4(">⁴√</div></div>
+		</div>
+	</div>
+	<div id="keys-selected-sign" class="keys-reveal keys-reveal-sign hide">
+		<div class="row simple-keys">
+			<div><div class="key-reveal key-left" data-code="<">&#60;</div></div>
+			<div><div class="key-reveal key-left" data-code=">">&#62;</div></div>
+		</div>
+	</div>
+	<div id="keys-selected-sin" class="keys-reveal keys-reveal-sin hide">
+		<div class="row simple-keys">
+			<div><div class="key-reveal key-left key-func" data-code="cos(">cos</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="tan(">tan</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="cot(">cot</div></div>
+		</div>
+	</div>
+	<div id="keys-selected-ln" class="keys-reveal keys-reveal-ln hide">
+		<div class="row simple-keys">
+			<div><div class="key-reveal key-left key-func" data-code="log2(">log₂</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="log10(">log₁₀</div></div>
+		</div>
+	</div>
+	<div id="keys-selected-func-sin" class="keys-reveal keys-reveal-func-sin hide">
+		<div class="row simple-keys">
+			<div><div class="key-reveal key-left key-func" data-code="asin(">asin</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="sinh">sinh</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="asinh(">asinh</div></div>
+		</div>
+	</div>
+	<div id="keys-selected-func-cos" class="keys-reveal keys-reveal-func-cos hide">
+		<div class="row simple-keys">
+			<div><div class="key-reveal key-left key-func" data-code="acos(">acos</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="cosh(">cosh</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="acosh(">acosh</div></div>
+		</div>
+	</div>
+	<div id="keys-selected-func-tan" class="keys-reveal keys-reveal-func-tan hide">
+		<div class="row simple-keys">
+			<div><div class="key-reveal key-left key-func" data-code="atan(">atan</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="tanh(">tanh</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="atanh(">atanh</div></div>
+		</div>
+	</div>
+	<div id="keys-selected-func-cot" class="keys-reveal keys-reveal-func-cot hide">
+		<div class="row simple-keys">
+			<div><div class="key-reveal key-left key-func" data-code="acot(">acot</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="coth(">coth</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="acoth(">acoth</div></div>
+		</div>
+	</div>
+	<div id="keys-selected-func-sec" class="keys-reveal keys-reveal-func-sec hide">
+		<div class="row simple-keys">
+			<div><div class="key-reveal key-left key-func" data-code="asec(">asec</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="sech(">sech</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="asech(">asech</div></div>
+		</div>
+	</div>
+	<div id="keys-selected-func-csc" class="keys-reveal keys-reveal-func-csc hide">
+		<div class="row simple-keys">
+			<div><div class="key-reveal key-left key-func" data-code="acsc(">acsc</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="csch(">csch</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="acsch(">acsch</div></div>
+		</div>
+	</div>
+	<div id="keys-selected-func-sqrt" class="keys-reveal keys-reveal-func-sqrt hide">
+		<div class="row simple-keys">
+			<div><div class="key-reveal key-left key-func" data-code="sqrt3(">sqrt3</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="sqrt4(">sqrt4</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="sqrt5(">sqrt5</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="sqrt6(">sqrt6</div></div>
+		</div>
+	</div>
+	<div id="keys-selected-func-ln" class="keys-reveal keys-reveal-func-ln hide">
+		<div class="row simple-keys">
+			<div><div class="key-reveal key-left key-func" data-code="log2(">log₂</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="log3(">log₃</div></div>
+			<div><div class="key-reveal key-left key-func" data-code="log10(">log₁₀</div></div>
+		</div>
+	</div>
+  </div>
+  <div id="keyboard" class="hide">
+  	<div class="relative">
+  		<div class="keyboard-move-container">
+  			<div id="keyboard-move"></div>
+  		</div>
+  		<div id="keys-numbers">
+			<div class="row simple-keys">
+				<div><div id="key-select-var" class="key-tip key-tip-y key-left key-var" data-code="x">x</div></div>
+				<div><div class="key-left key-br" data-code="(">(</div></div>
+				<div><div class="key-left key-br" data-code=")">)</div></div>
+				<div><div class="key-number" data-code="7">7</div></div>
+				<div><div class="key-number" data-code="8">8</div></div>
+				<div><div class="key-number" data-code="9">9</div></div>
+				<div><div class="key-op" data-code="/">÷</div></div>
+			</div>
+			<div class="row simple-keys">
+				<div><div id="key-select-pow" class="key-tip key-tip-n key-left" data-code="²">²</div></div>
+				<div><div id="key-select-sqrt" class="key-tip key-tip-sqrt key-left" data-code="sqrt(">√</div></div>
+				<div><div id="key-select-sign" class="key-left key-tip key-tip-s key-var" data-code="=">=</div></div>
+				<div><div class="key-number" data-code="4">4</div></div>
+				<div><div class="key-number" data-code="5">5</div></div>
+				<div><div class="key-number" data-code="6">6</div></div>
+				<div><div class="key-op" data-code="*">×</div></div>
+			</div>
+			<div class="row simple-keys">
+				<div><div class="key-left key-var" data-code="e">e</div></div>
+				<div><div class="key-left key-var" data-code="pi">π</div></div>
+				<div><div class="key-left key-grad" data-code="°">°</div></div>
+				<div><div class="key-number" data-code="1">1</div></div>
+				<div><div class="key-number" data-code="2">2</div></div>
+				<div><div class="key-number" data-code="3">3</div></div>
+				<div><div class="key-op" data-code="-">−</div></div>
+			</div>
+			<div class="row simple-keys">
+				<div><div id="key-select-sin" class="key-tip key-tip-sin key-left key-func" data-code="sin(">sin</div></div>
+				<div><div id="key-select-ln" class="key-tip key-tip-ln key-left key-func" data-code="ln(">ln</div></div>
+				<div><div class="key-left key-var"></div></div>
+				<div><div class="key-number" data-code=".">.</div></div>
+				<div><div class="key-number" data-code="0">0</div></div>
+				<div><div class="key-op" data-code="^">^</div></div>
+				<div><div class="key-op" data-code="+">+</div></div>
+			</div>
+			<div class="row manage-keys">
+				<div><div class="keys-to-abc">abc</div></div>
+				<div><div class="keys-to-funcs">f(x)</div></div>
+				<div><div class="keys-to-numbers hide">¹²+−</div></div>
+				<div><div class="key-remove">⌫</div></div>
+				<div><div class="key-solve">=</div></div>
+			</div>
+		</div>
+		<div id="keys-funcs" class="hide">
+			<div class="row simple-keys">
+				<div><div id="key-select-func-sin" class="key-tip key-tip-many key-left key-left key-func" data-code="sin(">sin</div></div>
+				<div><div id="key-select-func-cos" class="key-tip key-tip-many key-left key-func" data-code="cos(">cos</div></div>
+				<div><div id="key-select-func-tan" class="key-tip key-tip-many key-left key-func" data-code="tan(">tan</div></div>
+				<div><div id="key-select-func-cot" class="key-tip key-tip-many key-left key-func" data-code="cot(">cot</div></div>
+				<div><div class="key-left key-func" data-code="pi">𝜋</div></div>
+				<div><div class="key-left key-func" data-code="alpha">𝛼</div></div>
+				<div><div class="key-left key-func" data-code="beta">𝛽</div></div>
+			</div>
+			<div class="row simple-keys">
+				<div><div id="key-select-func-sec" class="key-tip key-tip-many key-left key-func" data-code="sec(">sec</div></div>
+				<div><div id="key-select-func-csc" class="key-tip key-tip-many key-left key-func" data-code="csc(">csc</div></div>
+				<div><div class="key-left key-func"></div></div>
+				<div><div class="key-left key-func"></div></div>
+				<div><div class="key-left key-func" data-code="sigma">𝜎</div></div>
+				<div><div class="key-left key-func" data-code="gamma">𝛾</div></div>
+				<div><div class="key-left key-func" data-code="nu">𝜈</div></div>
+			</div>
+			<div class="row simple-keys">
+				<div><div id="key-select-func-sqrt" class="key-tip key-tip-many key-left key-func" data-code="sqrt(">sqrt</div></div>
+				<div><div id="key-select-func-pow" class="key-left key-func" data-code="pow(">pow</div></div>
+				<div><div id="key-select-func-exp" class="key-left key-func" data-code="exp(">exp</div></div>
+				<div><div id="key-select-func-abs" class="key-left key-func" data-code="abs(">abs</div></div>
+				<div><div class="key-left key-func" data-code="mu">𝜇</div></div>
+				<div><div class="key-left key-func" data-code="phi">𝜙</div></div>
+				<div><div class="key-left key-func" data-code="psi">𝜓</div></div>
+			</div>
+			<div class="row simple-keys">
+				<div><div id="key-select-func-ln" class="key-tip key-tip-many key-left key-func" data-code="ln(">ln</div></div>
+				<div><div class="key-left key-func"></div></div>
+				<div><div class="key-left key-func"></div></div>
+				<div><div class="key-left key-func" data-code=",">,</div></div>
+				<div><div class="key-left key-func" data-code="tau">𝜏</div></div>
+				<div><div class="key-left key-func" data-code="eta">𝜂</div></div>
+				<div><div class="key-left key-func" data-code="rho">𝜌</div></div>
+			</div>
+			<div class="row manage-keys">
+				<div><div class="keys-to-abc">abc</div></div>
+				<div><div class="keys-to-funcs hide">f(x)</div></div>
+				<div><div class="keys-to-numbers">¹²+−</div></div>
+				<div><div class="key-remove">⌫</div></div>
+				<div><div class="key-solve">=</div></div>
+			</div>
+		</div>
+		<div id="keys-board" class="hide">
+			<div class="row-mobile mobile-keys">
+				<div><div data-shift="+">1</div></div>
+				<div><div data-shift="-">2</div></div>
+				<div><div data-shift="*">3</div></div>
+				<div><div data-shift="/">4</div></div>
+				<div><div data-shift="^">5</div></div>
+				<div><div data-shift="(">6</div></div>
+				<div><div data-shift=")">7</div></div>
+				<div><div data-shift="=">8</div></div>
+				<div><div data-shift=".">9</div></div>
+				<div><div data-shift="²">0</div></div>
+			</div>
+			<div class="row-mobile mobile-keys">
+				<div><div>q</div></div>
+				<div><div>w</div></div>
+				<div><div>e</div></div>
+				<div><div>r</div></div>
+				<div><div>t</div></div>
+				<div><div>y</div></div>
+				<div><div>u</div></div>
+				<div><div>i</div></div>
+				<div><div>o</div></div>
+				<div><div>p</div></div>
+			</div>
+			<div class="row-mobile mobile-keys">
+				<div><div>a</div></div>
+				<div><div>s</div></div>
+				<div><div>d</div></div>
+				<div><div>f</div></div>
+				<div><div>g</div></div>
+				<div><div>h</div></div>
+				<div><div>j</div></div>
+				<div><div>k</div></div>
+				<div><div>l</div></div>
+			</div>
+			<div class="row-mobile mobile-keys">
+			    <div><div class="key-shift"></div></div>
+				<div><div>z</div></div>
+				<div><div>x</div></div>
+				<div><div>c</div></div>
+				<div><div>v</div></div>
+				<div><div>b</div></div>
+				<div><div>n</div></div>
+				<div><div>m</div></div>
+			</div>
+			<div class="row manage-keys">
+				<div><div class="keys-to-abc hide">abc</div></div>
+				<div><div class="keys-to-funcs">f(x)</div></div>
+				<div><div class="keys-to-numbers">¹²+−</div></div>
+				<div><div class="key-remove">⌫</div></div>
+				<div><div class="key-solve">=</div></div>
+			</div>
+		</div>
+  	</div>
+  </div>
+  <div id="keyboard-button"></div>`</script>
+<script async src="/script-keyboard.js?1711908964" onload="document.getElementById('keyboard-container').classList.remove('hide')"></script>
+  <script>document.getElementById("link-toupdate").href+=decodeURIComponent(window.location.hash);var expandtable=false;var complexset=2;window.addEventListener("hashchange",function(){""!==window.location.hash&&window.location.reload(!0)});if(""!==window.location.hash){var beginSystem="",getHash=decodeURIComponent(window.location.hash).slice(1);getHash=getHash.replace(/(?:^|&)expr=(.+?)(&|$)/,function(b,a){if(a[0]!=="[") document.querySelector("#input-expression").value=a;else beginSystem=a;return"&"});getHash=getHash.replace(/(?:^|&)arg=([a-df-hj-z,0-9]+)(&|$)/,function(b,a){if(/^[a-df-hj-z]$/.test(a)){var c=document.querySelector("#calc-param option");c.innerHTML=a;c.value=a}else if(a.includes(",")){var c=document.querySelector("#calc-sys-param");c.value=a}return"&"});getHash.replace(/(?:^|&)fcr=(1)(&|$)/,function(b,a){"1"===a&&(expandtable=!0);return"&"});getHash.replace(/(?:^|&)c=(1)(&|$)/,function(b,a){"1"===a&&(complexset=1);return"&"});getHash.replace(/(?:^|&)c=(0)(&|$)/,function(b,a){"0"===a&&(complexset=0);return"&"});window.location=window.location.origin+window.location.pathname+"#"}else{var beginSystem='';}document.querySelector("#input-expression").focus();var defaultLang="en",lang="cn",input=document.querySelector("#input-expression"),htmllang="zh",token=encodeURIComponent("effbedc9a02e101a"),translateList={"cn":{"combo":{"0":{"0":"等式两边除以","1":""},"1":{"0":"等式两边乘以","1":""},"3":{"0":"移项"},"5":{"0":"展开括号"},"7":{"2":"并且"},"22":{"0":"减少到公分母"},"32":{"0":"提取公因数"},"34":{"0":"使用公式"},"36":{"0":"提取公因数"},"76":{"0":"定义函数"}},"solution":{"0":{"0":"方程的解"},"1":{"0":"这个方程没有实根"},"2":{"0":"这个方程没有解"}},"initineq":{"0":"原不等式"},"initint":{"0":"方程的解"},"initeq":{"0":"方程原式"},"ineqsolutoin":{"0":{"1":"在数轴上标记零点","3":"根据","6":"所以"}},"export":{"0":"计算结果的 LaTeX 代码"},"stepsolution":{"0":"详细解题过程"},"nosolution":{"2":{"0":"方程左右两边不等"}},"zerofuncs":{"1":"解不等式"},"area":{"0":"要求"},"splitfactor":{"0":{"1":"方程的解","2":"是方程的一组解"}},"type":{"3":{"1":"由于"}}}};input.selectionStart=input.value.length;g=document.getElementById("load-animation");if(g&&Math.random()<1){g.classList.add("centered")}</script>
+    <script id="lang-js" src="/langs/equ/cn.js?1713264292"></script>
+  <script src="/script-plot.js?1721325429"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.20/katex.min.css" rel="stylesheet" onerror="this.onerror=null;this.href='/KaTeX/katex.min.css?1'">
+  <script src="/equ/script-equ.js?1728564456"></script>
+ </body>
+</html>
